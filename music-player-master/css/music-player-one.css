@@ -1,0 +1,104 @@
+.music-player-one {
+  background: var(--black);
+  height: auto;
+  width: 350px;
+  border-radius: 1rem;
+  display: block;
+}
+
+.music-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-player-one figure {
+  display: flex;
+  justify-content: center;
+}
+
+.music-player-one figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.music-information h1 {
+  color: var(--gainsboro);
+  font: 500 1rem Inter, sans-serif;
+  margin-top: 1rem;
+}
+
+.music-information p {
+  color: var(--dimGray);
+  font: 500 0.725rem Inter, sans-serif;
+  margin-top: 0.313rem;
+}
+
+.timerwrapper {
+  margin-top: 1.25rem;
+  position: relative;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.timer span {
+  color: var(--dimGray);
+  font: 500 0.625rem Inter, sans-serif;
+}
+
+.elapsed-time {
+  background: var(--gainsboro);
+  width: 89%;
+  height: 4px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-top: 0.313rem;
+  cursor: pointer;
+}
+
+.elapsed-time [data-timer-bar] {
+  position: absolute;
+  background: var(--mediumVioletRed);
+  border-radius: 4px;
+  left: 19px;
+  top: 17px;
+  width: 0;
+  height: 4px;
+  z-index: 2;
+}
+
+.boots-features {
+  padding-top: 1.875rem;
+  padding-bottom: 1.25rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.125rem;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.boots-features .btn-pause { 
+  background: var(--mediumVioletRed); 
+  border: none;
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+

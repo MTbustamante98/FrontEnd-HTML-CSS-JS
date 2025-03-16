@@ -1,0 +1,40 @@
+:root {
+  --mediumVioletRed: #c93b76;
+  --darkSlateGray: #212936;
+  --dimGray: #4d5562;
+  --gainsboro: #e5e7eb;
+  --black: #121826a6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    200deg,
+    var(--darkSlateGray),
+    70%,
+    var(--mediumVioletRed) 100%
+  );
+  font-family: Inter, Arial, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.author-info {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(55, 65, 81);
+}
+
+.author-info a {
+  text-decoration: none;
+}
