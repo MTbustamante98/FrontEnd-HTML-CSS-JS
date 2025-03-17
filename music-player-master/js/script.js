@@ -42,16 +42,16 @@ function playPauseMusic(event) {
   if (event) event.preventDefault();
 
   audio.paused
-    ? (imgPaused.setAttribute("src", "./resources/play_pause_reverse-1.png"),
+    ? (imgPaused.setAttribute("src", "/music-player-master/resources/play_pause_reverse-1.png"),
       audio.play(),
       progressBar())
-    : (imgPaused.setAttribute("src", "./resources/Play_fill.svg"),
+    : (imgPaused.setAttribute("src", "/music-player-master/resources/Play_fill.svg"),
       audio.pause());
 }
 
 function endedMusic() {
   if (imgPaused && imgPaused.setAttribute) {
-    imgPaused.setAttribute("src", "./resources/Play_fill.svg");
+    imgPaused.setAttribute("src", "/music-player-master/resources/Play_fill.svg");
   }
 
   if (timer) {
