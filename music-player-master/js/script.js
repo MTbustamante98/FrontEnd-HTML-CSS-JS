@@ -39,7 +39,7 @@ const audio = new Audio(songs[currentSongIndex].src);
 audio.onended = () => endedMusic(imgPaused, timer, dataTimerBar);
 
 function playPauseMusic(event) {
-  event?.event.preventDefault();
+  event?.preventDefault();
 
   audio.paused
     ? (imgPaused.setAttribute(
@@ -73,7 +73,7 @@ function endedMusic() {
 }
 
 function nextSong(event) {
-  event?.event.preventDefault();
+  event?.preventDefault();
 
   if (imgPaused && imgPaused.setAttribute) {
     imgPaused.setAttribute(
@@ -95,7 +95,7 @@ function nextSong(event) {
 }
 
 function prevSong(event) {
-  event?.event.preventDefault();
+  event?.preventDefault();
 
   loadSong(songs[0]);
 
@@ -136,7 +136,7 @@ function progressBar() {
 }
 
 function advanceProgressBar(event) {
-  event?.event.preventDefault();
+  event?.preventDefault();
 
   const width = this.clientWidth;
   const clickX = event.offsetX;
