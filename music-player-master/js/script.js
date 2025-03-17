@@ -39,19 +39,28 @@ const audio = new Audio(songs[currentSongIndex].src);
 audio.onended = () => endedMusic(imgPaused, timer, dataTimerBar);
 
 function playPauseMusic(event) {
-  if (event) event.preventDefault();
+  event?.event.preventDefault();
 
   audio.paused
-    ? (imgPaused.setAttribute("src", "../music-player-master/resources/play_pause_reverse-1.png"),
+    ? (imgPaused.setAttribute(
+        "src",
+        "../music-player-master/resources/play_pause_reverse-1.png"
+      ),
       audio.play(),
       progressBar())
-    : (imgPaused.setAttribute("src", "../music-player-master/resources/Play_fill.svg"),
+    : (imgPaused.setAttribute(
+        "src",
+        "../music-player-master/resources/Play_fill.svg"
+      ),
       audio.pause());
 }
 
 function endedMusic() {
   if (imgPaused && imgPaused.setAttribute) {
-    imgPaused.setAttribute("src", "../music-player-master/resources/Play_fill.svg");
+    imgPaused.setAttribute(
+      "src",
+      "../music-player-master/resources/Play_fill.svg"
+    );
   }
 
   if (timer) {
@@ -64,7 +73,14 @@ function endedMusic() {
 }
 
 function nextSong(event) {
-  if (event) event.preventDefault();
+  event?.event.preventDefault();
+
+  if (imgPaused && imgPaused.setAttribute) {
+    imgPaused.setAttribute(
+      "src",
+      "../music-player-master/resources/Play_fill.svg"
+    );
+  }
 
   const { img, title, author, src } = songs[1];
 
@@ -79,7 +95,7 @@ function nextSong(event) {
 }
 
 function prevSong(event) {
-  if (event) event.preventDefault();
+  event?.event.preventDefault();
 
   loadSong(songs[0]);
 
@@ -120,7 +136,7 @@ function progressBar() {
 }
 
 function advanceProgressBar(event) {
-  if (event) event.preventDefault();
+  event?.event.preventDefault();
 
   const width = this.clientWidth;
   const clickX = event.offsetX;
@@ -151,5 +167,7 @@ if (Array.isArray(events) && events.length > 0) {
     audio.addEventListener("timeupdate", progressBar);
     audio.addEventListener("loadedmetadata", formatProgress);
   });
+} else {
+  console.error("Error: The 'events' array is either empty or not defined.");
 }
 loadSong(currentSongIndex);
