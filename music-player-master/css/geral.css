@@ -13,7 +13,7 @@
 }
 
 body {
-  background: url("/resources/gradient-bg-small.jpg") no-repeat;
+  background: url("../music-player-master/resources/gradient-bg-small.jpg") no-repeat;
   background-size: cover;
   font-family: Inter, Arial, sans-serif;
 }
