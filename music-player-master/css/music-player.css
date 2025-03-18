@@ -102,3 +102,7 @@
   border-radius: 50%;
 }
 
+.btn-pause img {
+  height: auto;
+  width: auto;
+}

@@ -13,12 +13,8 @@
 }
 
 body {
-  background: linear-gradient(
-    200deg,
-    var(--darkSlateGray),
-    70%,
-    var(--mediumVioletRed) 100%
-  );
+  background: url("/resources/gradient-bg-small.jpg") no-repeat;
+  background-size: cover;
   font-family: Inter, Arial, sans-serif;
 }
 
@@ -32,9 +28,16 @@ main {
 .author-info {
   font-size: 14px;
   text-align: center;
-  color: rgb(55, 65, 81);
+  color:  var(--gainsboro);
 }
 
 .author-info a {
   text-decoration: none;
+  color: blue;
+}
+
+@media (max-width: 700px) {
+  body {
+    background: url("/resources/gradient-bg.jpg") no-repeat;
+  }
 }

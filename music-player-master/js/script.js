@@ -44,13 +44,13 @@ function playPauseMusic(event) {
   audio.paused
     ? (imgPaused.setAttribute(
         "src",
-        "../music-player-master/resources/play_pause_reverse-1.png"
+        "/resources/play_pause_reverse-1.png"
       ),
       audio.play(),
       progressBar())
     : (imgPaused.setAttribute(
         "src",
-        "../music-player-master/resources/Play_fill.svg"
+        "/resources/Play_fill.svg"
       ),
       audio.pause());
 }
@@ -59,7 +59,7 @@ function endedMusic() {
   if (imgPaused && imgPaused.setAttribute) {
     imgPaused.setAttribute(
       "src",
-      "../music-player-master/resources/Play_fill.svg"
+      "/resources/Play_fill.svg"
     );
   }
 
@@ -75,19 +75,19 @@ function endedMusic() {
 function nextSong(event) {
   event?.preventDefault();
 
-  if (imgPaused && imgPaused.setAttribute) {
-    imgPaused.setAttribute(
-      "src",
-      "../music-player-master/resources/Play_fill.svg"
-    );
-  }
-
   const { img, title, author, src } = songs[1];
 
   figure.src = img;
   sectionTitle.innerHTML = title;
   sectionAuthor.innerHTML = author;
   audio.src = src;
+
+  if (imgPaused && imgPaused.setAttribute) {
+    imgPaused.setAttribute(
+      "src",
+      "/resources/Play_fill.svg"
+    );
+  }
 
   if (timerWrapper && dataTimerBar) {
     dataTimerBar.style.width = "";
@@ -101,6 +101,13 @@ function prevSong(event) {
 
   if (timerWrapper && dataTimerBar) {
     dataTimerBar.style.width = "";
+  }
+
+  if (imgPaused && imgPaused.setAttribute) {
+    imgPaused.setAttribute(
+      "src",
+      "/resources/Play_fill.svg"
+    );
   }
 }
 
