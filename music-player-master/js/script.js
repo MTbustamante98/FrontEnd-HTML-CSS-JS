@@ -44,13 +44,13 @@ function playPauseMusic(event) {
   audio.paused
     ? (imgPaused.setAttribute(
         "src",
-        "/resources/play_pause_reverse-1.png"
+        "../music-player-master/resources/play_pause_reverse-1.png"
       ),
       audio.play(),
       progressBar())
     : (imgPaused.setAttribute(
         "src",
-        "/resources/Play_fill.svg"
+        "../music-player-master/resources/Play_fill.svg"
       ),
       audio.pause());
 }
@@ -59,7 +59,7 @@ function endedMusic() {
   if (imgPaused && imgPaused.setAttribute) {
     imgPaused.setAttribute(
       "src",
-      "/resources/Play_fill.svg"
+      "../music-player-master/resources/Play_fill.svg"
     );
   }
 
@@ -85,7 +85,7 @@ function nextSong(event) {
   if (imgPaused && imgPaused.setAttribute) {
     imgPaused.setAttribute(
       "src",
-      "/resources/Play_fill.svg"
+      "../music-player-master/resources/Play_fill.svg"
     );
   }
 
@@ -106,7 +106,7 @@ function prevSong(event) {
   if (imgPaused && imgPaused.setAttribute) {
     imgPaused.setAttribute(
       "src",
-      "/resources/Play_fill.svg"
+      "../music-player-master/resources/Play_fill.svg"
     );
   }
 }
