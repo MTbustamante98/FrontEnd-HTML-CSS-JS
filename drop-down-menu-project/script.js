@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const events = ["touchstart", "click"];
   const activeClass = "ativo";
 
-  const html = document.documentElement;
-
   function initDropDown(event) {
     event.preventDefault();
     const targetMenuArray =
@@ -43,7 +41,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     if (menuMobile) {
       burguerImg.setAttribute(
         "src",
-        willActivate ? "./images/icon-menu.svg" : "./images/icon-close-menu.svg"
+        willActivate ? "images/icon-menu.svg" : "images/icon-close-menu.svg"
       );
     }
     return;
