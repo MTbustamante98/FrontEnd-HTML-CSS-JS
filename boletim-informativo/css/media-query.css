@@ -1,0 +1,57 @@
+@media (max-width: 700px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    height: auto;
+    border-radius: 0;
+    overflow-x: hidden;
+  }
+
+  .information-box {
+    order: 1;
+  }
+
+  .information-box h1 {
+    font-size: 2.5rem;
+    padding: 40px 20px 0;
+  }
+
+  .information-box p {
+    padding: 16px 20px 0;
+    max-width: 35ch;
+    font-size: 1rem;
+  }
+
+  .span span {
+    padding-left: 20px;
+    max-width: 30ch;
+  }
+
+  .span span::before {
+    left: -20px;
+    top: -1px;
+  }
+
+  .form-box {
+    padding: 30px 20px 30px;
+  }
+
+  picture img {
+    padding: 0;
+    width: 800px;
+  }
+
+  .box-sucess-message {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .box-button {
+    max-width: 320px;
+  }
+
+  .attribution { 
+    font-size: 0.75rem;
+  } 
+}

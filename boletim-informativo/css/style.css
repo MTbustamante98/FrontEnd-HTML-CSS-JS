@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary */
+  --Tomato: hsl(4, 100%, 67%);
+  /* Neutral */
+  --DarkSlateGrey: hsl(234, 29%, 20%);
+  --CharcoalGrey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--DarkSlateGrey);
+  font-family: 'Roboto', 'Arial', sans-serif;
+  position: relative;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--White);
+  width: 800px;
+  height: auto;
+  border-radius: 30px;
+}
+
+.information-box h1 {
+  padding: 80px 40px 0;
+  font-size: 3rem;
+  color: var(--DarkSlateGrey);
+}
+
+.information-box p {
+  padding: 16px 40px 0;
+  font-size: 0.875rem;
+  color: var(--CharcoalGrey);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.span {
+  padding: 18px 40px 0;
+  position: relative;
+}
+
+.span span {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--CharcoalGrey);
+  margin-bottom: 16px;
+  padding-left: 35px;
+  position: relative;
+}
+
+.span span::before {
+  content: '';
+  display: inline-block;
+  background: url('../assets/images/icon-list.svg') no-repeat;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 0;
+  top: -1px;
+}
+
+.form-box {
+  padding: 30px 40px 0;
+}
+
+.form-box label {
+  display: block;
+  font-size: 0.675rem;
+  color: var(--DarkSlateGrey);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 5px;
+  border: 1px solid hsl(231, 7%, 80%);
+  box-sizing: border-box;
+}
+
+.form-box input:focus {
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.form-box input::placeholder {
+  padding-left: 16px;
+  color: hsl(231, 7%, 65%);
+}
+
+.form-box button {
+  width: 100%;
+  padding: 18px 0;
+  color: hsl(0, 0%, 90%);
+  background: var(--DarkSlateGrey);
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+picture img {
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.box-sucess-message {
+  background: var(--White);
+  width: 470px;
+  height: 470px;
+  border-radius: 30px;
+  margin-left: 30px;
+  position: absolute;
+  display: none;
+}
+
+.box-sucess-message.ativo {
+  display: block;
+}
+
+.box-icon-sucess {
+  padding: 30px 50px;
+}
+
+.box-sucess-message h1 {
+  padding: 0 50px;
+  max-width: 15ch;
+  font-size: 3rem;
+  color: var(--DarkSlateGrey);
+}
+
+.box-sucess-message p {
+  padding: 10px 50px;
+  max-width: 60ch;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--DarkSlateGrey);
+  line-height: 1.6;
+}
+
+.box-button {
+  max-width: 370px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+button[type="reset"] {
+  width: 100%;
+  padding: 18px 0;
+  color: hsl(0, 0%, 90%);
+  background: var(--DarkSlateGrey);
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.box-input {
+  position: relative;
+}
+
+#message-error {
+  position: absolute;
+  left: 225px;
+  top: -20px;
+  width: 100%;
+  font-size: 0.675rem;
+  font-weight: 600;
+  color: var(--Tomato);
+}
+
+.attribution { 
+  font-size: 1rem; 
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution a { 
+  color: var(--Tomato);
+  text-decoration: none;
+}
