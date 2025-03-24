@@ -1,0 +1,16 @@
+{
+  "name": "news-homepage-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "webpack --mode development --watch --entry ./js/script.js --output-path ./dist --output-filename main.js",
+    "build": "webpack --mode production --entry ./js/script.js --output-path ./dist --output-filename main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
