@@ -20,24 +20,38 @@ ul li a {
   display: flex;
 }
 
+.article-topics-one .img-desktop {
+  padding: 1.875rem 1.875rem 1.25rem 0;
+}
+
 .article-information {
   display: flex;
 }
 
+.sub-article-title {
+  width: 400px;
+}
+
 .sub-article-button {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
+}
+
+.sub-article-button p {
+  max-width: 35ch;
 }
 
 .article-information h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 800;
   line-height: 3rem;
-  max-width: 15ch;
+  max-width: 9ch;
   color: var(--very-dark-blue);
 }
 
 .article-topics-two {
   width: 640px;
+  background: var(--very-dark-blue);
+  margin-top: 1.875rem;
 }
