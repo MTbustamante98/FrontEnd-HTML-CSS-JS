@@ -17,9 +17,9 @@
 
 body {
   background: var(--off-white);
+  font-family: 'Inter', Arial, sans-serif;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Inter', Arial, sans-serif;
 }
 
 ul {
