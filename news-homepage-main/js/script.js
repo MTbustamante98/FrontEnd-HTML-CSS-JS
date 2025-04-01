@@ -16,26 +16,18 @@ class initMenuMobile {
 
     if (this.imgBurguer) {
       const iconPath = isActive
-        ? "./assets/images/icon-menu-close.svg"
-        : "./assets/images/icon-menu.svg";
+        ? "/assets/images/icon-menu-close.svg"
+        : "/assets/images/icon-menu.svg";
       this.imgBurguer.setAttribute("src", iconPath);
       this.imgBurguer.classList.toggle(this.activeClass);
     }
   }
 
   addDropDownMenuEvent() {
-    try {
-      if (this.dropDownMenu) {
-        this.events.forEach((userEvent) => {
-          this.dropDownMenu.addEventListener(
-            userEvent,
-            this.activeDropDownMenu
-          );
-        });
-        console.log("Eventos Adicionados com sucesso");
-      }
-    } catch {
-      console.error("Erro ao adicionar eventos:", error);
+    if (this.dropDownMenu) {
+      this.events.forEach((userEvent) => {
+        this.dropDownMenu.addEventListener(userEvent, this.activeDropDownMenu);
+      });
     }
   }
 

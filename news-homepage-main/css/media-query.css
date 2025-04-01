@@ -81,6 +81,7 @@
 
   [data-menu="button"] {
     display: block;
+    z-index: 1;
   }
 
   .articles {
@@ -135,5 +136,20 @@
 
   .header nav.active {
     display: block;
+    animation: show ease .4s forwards;
+  }
+
+  #burguerImg.active {
+    display: block;
+  }
+
+  @keyframes show {
+    to {
+      opacity: 1;
+    }
+    from {
+      opacity: 0;
+      transform: translate(60px, 0);
+    }
   }
 }
