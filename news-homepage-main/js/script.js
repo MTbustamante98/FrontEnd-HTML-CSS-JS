@@ -12,6 +12,7 @@ class initMenuMobile {
   }
 
   activeDropDownMenu(event) {
+    event.preventDefault();
     const isActive = this.headerNav.classList.toggle(this.activeClass);
 
     if (this.imgBurguer) {
