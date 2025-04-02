@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="News homepage" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,36 +20,42 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
+    <header class="header container">
+      <div>
+        <a href="./"
+          ><img src="assets/images/logo.svg" alt="company representative logo"
+        /></a>
+      </div>
+      <nav aria-label="Primary navigation">
+        <ul role="menu" aria-orientation="horizontal">
+          <li role="none"><a role="menuitem" href="#">Home</a></li>
+          <li role="none"><a role="menuitem" href="#">New</a></li>
+          <li role="none"><a role="menuitem" href="#">Popular</a></li>
+          <li role="none"><a role="menuitem" href="#">Trending</a></li>
+          <li role="none"><a role="menuitem" href="#">Categories</a></li>
+        </ul>
+      </nav>
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">
+        <img
+          id="burguerImg"
+          src="assets/images/icon-menu.svg"
+          alt="Representation icon menu burger"
+        />
+      </button>
+    </header>
     <main class="container">
-      <header class="header">
-        <div>
-          <a href="./"
-            ><img
-              src="/assets/images/logo.svg"
-              alt="company representative logo"
-          /></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Categories</a></li>
-          </ul>
-        </nav>
-        <button data-menu="button" aria-expanded="false" aria-controls="menu">
-          <img id="burguerImg" src="/assets/images/icon-menu.svg" alt="Representation icon menu burger">
-        </button>
-      </header>
-      <section class="articles">
+      <section class="articles" role="region" aria-labelledby="article-topics-one">
         <div class="article-topics-one">
           <picture>
             <source
               media="(max-width: 700px)"
-              srcset="/assets/images/image-web-3-mobile.jpg"
+              srcset="assets/images/image-web-3-mobile.jpg"
             />
-            <img class="img-desktop" src="/assets/images/image-web-3-desktop.jpg" alt="" />
+            <img
+              class="img-desktop"
+              src="assets/images/image-web-3-desktop.jpg"
+              alt="Section background image"
+            />
           </picture>
           <section class="article-information">
             <div class="sub-article-title">
@@ -66,7 +72,7 @@
           </section>
         </div>
 
-        <aside class="article-topics-two">
+        <aside class="article-topics-two" role="region-two" aria-labelledby="title-topics-and-div-sub-topics">
           <h1 class="title-topics-two">New</h1>
           <div class="sub-topics">
             <h2>Hydrogen VS Electric Cars</h2>
@@ -89,10 +95,10 @@
         </aside>
       </section>
 
-      <section class="topics">
+      <section class="topics" role="region-three" aria-labelledby="container-topics">
         <div class="container-topics">
           <picture>
-            <img src="/assets/images/image-retro-pcs.jpg" alt="">
+            <img src="assets/images/image-retro-pcs.jpg" alt="symbolizing old computers" />
           </picture>
           <div class="sub-articles">
             <h1 class="title-reading-articles">01</h1>
@@ -102,7 +108,7 @@
         </div>
         <div class="container-topics">
           <div>
-            <img src="/assets/images/image-top-laptops.jpg" alt="">
+            <img src="assets/images/image-top-laptops.jpg" alt="laptop keyboard" />
           </div>
           <div class="sub-articles">
             <h1 class="title-reading-articles">02</h1>
@@ -112,7 +118,7 @@
         </div>
         <div class="container-topics">
           <div>
-            <img src="/assets/images/image-gaming-growth.jpg" alt="">
+            <img src="assets/images/image-gaming-growth.jpg" alt="Gaming growth" />
           </div>
           <div class="sub-articles">
             <h1 class="title-reading-articles">03</h1>
@@ -122,13 +128,12 @@
         </div>
       </section>
     </main>
-
-    <!-- <footer class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer> -->
-    <script src="./dist/main.js"></script>
+      >. Coded by <a href="#">Matheus Bustamante</a>.
+    </footer>
+    <script src="dist/main.js"></script>
   </body>
 </html>

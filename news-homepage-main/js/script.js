@@ -16,8 +16,8 @@ class initMenuMobile {
 
     if (this.imgBurguer) {
       const iconPath = isActive
-        ? "/assets/images/icon-menu-close.svg"
-        : "/assets/images/icon-menu.svg";
+        ? "assets/images/icon-menu-close.svg"
+        : "assets/images/icon-menu.svg";
       this.imgBurguer.setAttribute("src", iconPath);
       this.imgBurguer.classList.toggle(this.activeClass);
     }
