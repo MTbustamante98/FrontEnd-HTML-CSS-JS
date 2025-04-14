@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="description" content="FAQ accordion card" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-query.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="imagem-box-desktop">
+      <img src="./images/illustration-box-desktop.svg" width="191" height="184" alt="Imagem ilustrativa de uma caixa">
+    </div>
+    <main class="container">
+        <section class="imagens-ilustrativas" aria-label="Imagens">
+          <picture>
+            <source
+              media="(max-width: 800px)"
+              srcset="./images/bg-pattern-mobile.svg"
+            />
+            <img class="bg-pattern" src="./images/bg-pattern-desktop.svg" width="966" height="945" alt="Imagem ilustrativa" />
+          </picture>
+          <picture>
+            <source
+              media="(max-width: 800px)"
+              srcset="./images/illustration-woman-online-mobile.svg"
+            />
+            <img
+              class="illustration"
+              src="./images/illustration-woman-online-desktop.svg" width="472" height="359" alt="Imagem ilustrativa"
+            />
+          </picture>
+        </section>
+
+      <section class="faq" aria-label="Perguntas Respondidas Frequentemente">
+        <h1>FAQ</h1>
+        <dl class="js-accordion">
+          <dt>How many team members can I invite?</dt>
+          <dd>
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </dd>
+
+          <dt>What is the maximum file upload size?</dt>
+          <dd>
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </dd>
+
+          <dt>How do I reset my password?</dt>
+          <dd>
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </dd>
+
+          <dt>Can I cancel my subscription?</dt>
+          <dd>
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </dd>
+
+          <dt>Do you provide additional support?</dt>
+          <dd>
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </dd>
+        </dl>
+      </section>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.linkedin.com/notifications/?filter=all"
+        target="_blank"
+        >Matheus Bustamante</a
+      >.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
