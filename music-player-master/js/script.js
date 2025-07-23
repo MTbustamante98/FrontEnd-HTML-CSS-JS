@@ -4,7 +4,7 @@ const songs = [
     author: "Cosmo Sheldrake",
     src: "resources/lost-in-city-lights-145038.mp3",
     img: "resources/cover-1.jpg",
-  },
+  }, 
   {
     title: "Forest Lullaby",
     author: "Lesfm",
