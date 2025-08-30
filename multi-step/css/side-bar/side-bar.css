@@ -1,0 +1,45 @@
+.bg-side-bar {
+  background: url("/assets/images/bg-sidebar-desktop.svg") left no-repeat;
+  background-size: contain;
+}
+
+.step-now {
+  padding: 1.875rem;
+}
+
+.side-bar {
+  width: 350px;
+  height: 570px;
+}
+
+.which-step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.number-of-step {
+  font: 600 0.875rem/1.2 "Ubuntu", sans-serif;
+  margin-top: 0.25rem;
+}
+
+.number-of-step p {
+  width: 1.75rem;
+  height: 1.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.which-step .step-number {
+  opacity: 0.6;
+}
+
+
+.which-step .step-description {
+  margin-top: 0.125rem;
+  letter-spacing: 0.9px;
+}

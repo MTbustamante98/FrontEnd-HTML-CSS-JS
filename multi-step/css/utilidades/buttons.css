@@ -1,0 +1,21 @@
+.container-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-next-step {
+  padding: 0.938rem 2rem;
+  margin-top: 8rem;
+  border-radius: 0.313rem;
+  border: none;
+  background: var(--blue950);
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.btn-prev-step {
+  margin-top: 8rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

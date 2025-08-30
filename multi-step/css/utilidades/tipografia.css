@@ -1,0 +1,43 @@
+.font-xs {
+  font: 400 0.75rem "Ubuntu", sans-serif;
+}
+
+.font-2-xs {
+  font: 400 0.875rem "Ubuntu", sans-serif;
+}
+
+.font-3-xs {
+  font: 500 0.785rem "Ubuntu", sans-serif;
+}
+
+.font-2-xs-b {
+  font: 500 0.875rem "Ubuntu", sans-serif;
+}
+
+.font-xxs-b {
+  font: 600 0.875rem "Ubuntu", sans-serif;
+}
+
+.font-3-xs-b {
+  font: 500 0.975rem "Ubuntu", sans-serif;
+}
+
+.font-4-xs-b {
+  font: 600 0.975rem "Ubuntu", sans-serif;
+}
+
+.font-1-s {
+  font: 500 1rem "Ubuntu", sans-serif;
+}
+
+.font-2-s-b {
+  font: 600 1rem "Ubuntu", sans-serif;
+}
+
+.font-1-m {
+  font: 700 1.125rem "Ubuntu", sans-serif;
+}
+
+.font-1-xl {
+  font: 700 2rem "Ubuntu", sans-serif;
+}

@@ -1,0 +1,15 @@
+/* Geral */
+@import "./geral/geral.css";
+
+/* Side bar */
+@import "./side-bar/side-bar.css";
+
+@import "./steps/step-one.css";
+@import "./steps/step-two.css";
+@import "./steps/step-three.css";
+@import "./steps/step-active.css";
+
+/* Utilidades */
+@import "./utilidades/tipografia.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/buttons.css";
