@@ -5,7 +5,7 @@
 
 .btn-next-step {
   padding: 0.938rem 2rem;
-  margin-top: 8rem;
+  margin-top: 9rem;
   border-radius: 0.313rem;
   border: none;
   background: var(--blue950);
@@ -14,7 +14,7 @@
 }
 
 .btn-prev-step {
-  margin-top: 8rem;
+  margin-top: 9rem;
   border: none;
   background: none;
   cursor: pointer;

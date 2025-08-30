@@ -1,4 +1,21 @@
+#utilitarian-class {
+  margin-top: 4rem;
+}
+
+#button-utilitarian-class {
+  margin-top: 5rem;
+}
+
+
 .checkbox {
   display: flex;
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--blue950);
+  border-radius: 0.313rem;
+  margin-bottom: 0.938rem;
+}
+
+.checkbox label {
+  margin-left: 0.75rem;
 }
 

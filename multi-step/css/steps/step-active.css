@@ -1,4 +1,11 @@
-[data-step="one"],
+[data-step="one"] {
+  display: none;
+}
+
 [data-step="two"] {
   display: none;
+}
+
+[data-step="three"] {
+  display: block;
 }
