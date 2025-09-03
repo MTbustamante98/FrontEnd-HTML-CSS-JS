@@ -1,0 +1,36 @@
+.dynamic-data {
+  width: 94%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--blue50);
+  border-radius: 0.313rem;
+  margin-top: 1.875rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.plan-data {
+  margin-bottom: 2rem;
+}
+
+.online-service-data {
+  margin-bottom: 0.938rem;
+}
+
+.price-data {
+  justify-self: end;
+}
+
+.dec {
+  position: absolute;
+  top: 5rem;
+  width: 100%;
+  height: 1px;
+  background: var(--grey500);
+}
+
+.container-buttons-end {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}

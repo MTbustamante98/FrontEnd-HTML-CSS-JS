@@ -17,6 +17,7 @@
 
 .plan-info:focus {
   border: 1px solid var(--purple600);
+  background: var(--blue100);
 }
 
 .plan-info img {
