@@ -1,5 +1,5 @@
 #utilitarian-class {
-  margin-top: 3rem;
+  margin-top: 3.7rem;
 }
 
 #button-utilitarian-class {
@@ -30,9 +30,30 @@
 .checkbox .check-price {
   position: absolute;
   right: 1.5rem;
-  top: 1.75rem;  
+  top: 1.75rem;
 }
 
 .checkbox p {
   margin-top: 0.313rem;
+}
+
+@media (max-width: 768px) {
+  #utilitarian-class {
+    margin-top: 0;
+  }
+
+  #button-utilitarian-class {
+    margin-top: 0;
+  }
+
+  #container-utilitarian-class {
+   position: absolute;
+   bottom: -11.938rem;
+  }
+
+  .container-checkbox { 
+    width: 90%;
+    height: 4.063rem;
+    margin-left: 1.2rem;
+  }
 }

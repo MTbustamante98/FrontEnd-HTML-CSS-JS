@@ -73,3 +73,38 @@
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  .click-and-select-plan {
+    padding: 0 1.2rem;
+  }
+
+  .select-plan {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .plan-info {
+    width: 100%;
+    height: auto;
+    margin-top: 0.625rem;
+    flex-direction: row;
+  }
+
+  .plan-info .container-type-plan {
+    margin: 0.938rem 0 0 0.313rem;
+  }
+
+  .choose-the-time {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .container-type-plan .span-free {
+    display: none;
+    margin-bottom: 0.75rem;
+  }
+
+  .container-type-plan .price-of-plan {
+    margin-bottom: 0.313rem;
+  }
+}

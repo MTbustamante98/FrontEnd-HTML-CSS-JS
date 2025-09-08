@@ -10,6 +10,10 @@
   font: 500 0.785rem "Ubuntu", sans-serif;
 }
 
+.font-4-xs {
+  font: 600 0.785rem "Ubuntu", sans-serif;
+}
+
 .font-2-xs-b {
   font: 500 0.875rem "Ubuntu", sans-serif;
 }
@@ -27,7 +31,7 @@
 }
 
 .font-1-s {
-  font: 500 1rem "Ubuntu", sans-serif;
+  font: 400 1rem "Ubuntu", sans-serif;
 }
 
 .font-2-s-b {
@@ -40,4 +44,10 @@
 
 .font-1-xl {
   font: 700 2rem "Ubuntu", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .font-1-xl {
+    font: 700 1.5rem "Ubuntu", sans-serif;
+  }
 }

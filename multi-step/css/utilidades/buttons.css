@@ -1,6 +1,7 @@
 .container-buttons {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .btn-next-step {
@@ -18,4 +19,26 @@
   border: none;
   background: none;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container-buttons {
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: -6.25rem;
+    background: var(--white);
+    padding: 0.75rem 5rem;
+    margin-left: -60px;
+  }
+
+  .btn-next-step {
+    align-self: auto;
+    padding: 0.75rem 1.125rem;
+    margin-top: 0;
+  }
+
+  .btn-prev-step {
+    margin-top: 0;
+  }
 }

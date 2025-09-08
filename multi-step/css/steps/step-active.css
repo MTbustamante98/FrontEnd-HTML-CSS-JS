@@ -1,15 +1,6 @@
-[data-step="one"] {
+.step-two,
+.step-three,
+.step-four,
+.step-five {
   display: none;
-}
-
-[data-step="two"] {
-  display: none;
-}
-
-[data-step="three"] {
-  display: none;
-}
-
-[data-step="four"] {
-  display: block;
 }

@@ -38,8 +38,37 @@
   opacity: 0.6;
 }
 
-
 .which-step .step-description {
   margin-top: 0.125rem;
   letter-spacing: 0.9px;
+}
+
+.number-of-step [data-step].active {
+  background: var(--blue200);
+  color: #222;
+}
+
+@media (max-width: 768px) {
+  .bg-side-bar {
+    background: url("/assets/images/bg-sidebar-mobile.svg") no-repeat;
+    background-size: cover;
+  }
+
+  .side-bar {
+    width: 100%;
+    height: 200px;
+  }
+
+  .step-now {
+    display: flex;
+    gap: 1.3rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 9rem;
+    padding: 0;
+  }
+
+  .step-info {
+    display: none;
+  }
 }

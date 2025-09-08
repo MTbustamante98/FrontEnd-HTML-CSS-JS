@@ -1,26 +1,12 @@
-.step-infos {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-}
-
-.header-description p {
-  margin-top: 0.625rem;
-}
-
 .form {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
 }
 
-.form label {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.form input[type="text"],
-input[type="email"] {
+input[type="text"],
+input[type="email"],
+input[type="number"] {
   padding: 0.75rem 0;
   border-radius: 0.25rem;
   border: 1px solid var(--grey500);
@@ -28,11 +14,52 @@ input[type="email"] {
   width: 100%;
 }
 
-.form input::placeholder {
+.input-label label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-label input::placeholder {
   padding: 0.625rem;
   font-weight: 700;
 }
 
 .input-label {
   margin-top: 1.25rem;
+}
+
+.required {
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.required p {
+  margin-top: -0.313rem;
+  display: none;
+}
+
+.form input.active {
+  border: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  .form {
+    margin-top: 0;
+    box-sizing: border-box;
+  }
+
+  .input-label label {
+    margin-bottom: 0.25rem;
+  }
+  
+  .input-label {
+    padding: 0 1.5rem;
+    margin-top: 0;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    margin-bottom: 0.938rem;
+  }
 }

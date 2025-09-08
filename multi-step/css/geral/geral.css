@@ -32,6 +32,16 @@ body {
   width: 100%;
 }
 
+.step-infos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.header-description p {
+  margin-top: 0.625rem;
+}
+
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
@@ -39,4 +49,43 @@ body {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-Y: scroll;
+    padding-bottom: 1rem;
+  }
+
+  .container {
+    margin-top: -32.5rem;
+    padding: 0;
+    flex-direction: column;
+    background: none;
+    position: relative;
+  }
+
+  .step-infos {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 5.8rem;
+    left: 4rem;
+    padding-bottom: 1rem;
+    background: var(--white);
+    border-radius: 0.625rem;
+  }
+
+  .header-description {
+    padding: 1.5rem;
+  }
+
+  .header-description p {
+    max-width: 30ch;
+    line-height: 1.4;
+  }
+
+  .attribution {
+    display: none;
+  }
 }

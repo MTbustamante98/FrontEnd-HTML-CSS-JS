@@ -4,11 +4,12 @@
 /* Side bar */
 @import "./side-bar/side-bar.css";
 
+@import "./steps/step-active.css";
 @import "./steps/step-one.css";
 @import "./steps/step-two.css";
 @import "./steps/step-three.css";
 @import "./steps/step-four.css";
-@import "./steps/step-active.css";
+@import "./steps/step-five.css";
 
 /* Utilidades */
 @import "./utilidades/tipografia.css";
