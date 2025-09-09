@@ -1,10 +1,11 @@
 import { inputs } from "./elementsInput.js";
+import { active } from "../utilitariansElements.js";
 
 const blurEventValidate = () => {
   inputs.forEach((input) =>
     input.addEventListener("blur", (e) => {
       if (e.target.value.trim() !== "") {
-        e.target.classList.remove("active");
+        e.target.classList.remove(active);
 
         const errorMsg = document.querySelector(
           `.error-message[data-input="${input.id}"]`

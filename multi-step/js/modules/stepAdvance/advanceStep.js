@@ -1,20 +1,21 @@
 import { btnNext, btnPrev, steps } from "./elementsAdvance.js";
 import createValidationValues from "../validateInput/validateInputs.js";
 import { numberOfSteps } from "./elementsAdvance.js";
+import { active } from "../utilitariansElements.js";
 
 let currentStep = 0;
-if (steps.length) numberOfSteps[0].classList.add("active");
+if (steps.length) numberOfSteps[0].classList.add(active);
 
 function updateBackgroundAndColor() {
   const atual = steps[currentStep];
 
-  numberOfSteps.forEach((el) => el.classList.remove("active"));
+  numberOfSteps.forEach((el) => el.classList.remove(active));
 
   const id = atual.getAttribute("data-step");
   const stepNumber = document.querySelector(`[data-step=${id}]`);
 
   if (stepNumber) {
-    stepNumber.classList.add("active");
+    stepNumber.classList.add(active);
   }
 }
 

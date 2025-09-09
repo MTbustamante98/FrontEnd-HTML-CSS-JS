@@ -73,6 +73,20 @@
   border-radius: 50%;
 }
 
+.choose-the-time .choose.active {
+  position: absolute;
+  left: auto;
+  right: 0.188rem;
+}
+
+.container-type-plan .span-free.active {
+  display: block;
+}
+
+.choose-monthly.addColor {
+    color: var(--grey500) !important;
+}
+
 @media (max-width: 768px) {
   .click-and-select-plan {
     padding: 0 1.2rem;
