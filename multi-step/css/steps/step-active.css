@@ -1,10 +1,12 @@
-.step-one,
-.step-three,
-.step-four,
-.step-five {
-  display: none;
-}
-
 [data-step="one"] {
   display: none;
+}
+[data-step="two"] {
+  display: block;
+}
+[data-step="three"] {
+  display: block;
+}
+[data-step="four"] {
+  display: block;
 }

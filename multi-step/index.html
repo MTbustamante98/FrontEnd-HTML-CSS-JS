@@ -19,6 +19,7 @@
     />
     <title>Frontend Mentor | Multi-step form</title>
   </head>
+
   <body>
     <main class="container">
       <!-- Sidebar start -->
@@ -93,7 +94,9 @@
           <div class="input-label">
             <div class="required">
               <label class="font-3-xs cor-p1" for="nome">Name</label>
-              <p class="font-4-xs cor-p5 error-message" data-input="nome">This filed is required</p>
+              <p class="font-4-xs cor-p5 error-message" data-input="nome">
+                This filed is required
+              </p>
             </div>
             <input
               type="text"
@@ -106,7 +109,9 @@
           <div class="input-label">
             <div class="required">
               <label class="font-3-xs cor-p1" for="email">Email Address </label>
-              <p class="font-4-xs cor-p5 error-message" data-input="email">This filed is required</p>
+              <p class="font-4-xs cor-p5 error-message" data-input="email">
+                This filed is required
+              </p>
             </div>
             <input
               type="email"
@@ -118,10 +123,15 @@
 
           <div class="input-label">
             <div class="required">
-            <label class="font-3-xs cor-p1" for="phonenumber"
-              >Phone Number
-            </label>
-            <p class="font-4-xs cor-p5 error-message" data-input="phonenumber">This filed is required</p>
+              <label class="font-3-xs cor-p1" for="phonenumber"
+                >Phone Number
+              </label>
+              <p
+                class="font-4-xs cor-p5 error-message"
+                data-input="phonenumber"
+              >
+                This filed is required
+              </p>
             </div>
             <input
               type="number"
@@ -148,7 +158,11 @@
               <img src="./assets/images/icon-arcade.svg" alt="" />
               <div class="container-type-plan">
                 <p class="type-of-plan font-4-xs-b cor-p1">Arcade</p>
-                <span class="price-of-plan font-2-xs cor-n1">$9/mo</span>
+                <span
+                  class="utilitarian price-of-plan font-2-xs cor-n1"
+                  data-price="9"
+                  >$9/mo</span
+                >
                 <span class="span-free font-xs cor-p1">2 months free</span>
               </div>
             </button>
@@ -156,7 +170,11 @@
               <img src="./assets/images/icon-advanced.svg" alt="" />
               <div class="container-type-plan">
                 <p class="type-of-plan font-4-xs-b cor-p1">Advanced</p>
-                <span class="price-of-plan font-2-xs cor-n1">$12/mo</span>
+                <span
+                  class="utilitarian price-of-plan font-2-xs cor-n1"
+                  data-price="12"
+                  >$12/mo</span
+                >
                 <span class="span-free font-xs cor-p1">2 months free</span>
               </div>
             </button>
@@ -164,7 +182,11 @@
               <img src="./assets/images/icon-pro.svg" alt="" />
               <div class="container-type-plan">
                 <p class="type-of-plan font-4-xs-b cor-p1">Pro</p>
-                <span class="price-of-plan font-2-xs cor-n1">$15/mo</span>
+                <span
+                  class="utilitarian price-of-plan font-2-xs cor-n1"
+                  data-price="15"
+                  >$15/mo</span
+                >
                 <span class="span-free font-xs cor-p1">2 months free</span>
               </div>
             </button>
@@ -185,88 +207,114 @@
       <!-- Step 2 end -->
       <!-- Step 3 start -->
       <section class="step-infos step step-three" data-step="three">
-      <div class="header-description">
-        <h1 class="font-1-xl cor-p1">Pick add-ons</h1>
+        <div class="header-description">
+          <h1 class="font-1-xl cor-p1">Pick add-ons</h1>
           <p class="font-1-s cor-n1">
-            Add-ons help enhance your gaming experience. 
+            Add-ons help enhance your gaming experience.
           </p>
-      </div>
-      <form id="utilitarian-class" class="form">
-        <div class="container-checkbox">
-          <div class="checkbox">
-            <input type="checkbox" name="online" id="online"></input>
-            <label for="online" class="font-xxs-b cor-p1">
-              Online service
-              <p class="font-3-xs cor-n1">Access to multiplayer games <span class="check-price cor-p2">+$1/mo</span></p>
-            </label>
+        </div>
+        <form id="utilitarian-class" class="form">
+          <div class="container-checkbox">
+            <div class="checkbox">
+              <input type="checkbox" name="online" id="online" />
+              <label for="online" class="font-xxs-b cor-p1">
+                Online service
+                <p class="font-3-xs cor-n1">
+                  Access to multiplayer games
+                  <span class="utilitarian check-price cor-p2" data-price="1"
+                    >+$1/mo</span
+                  >
+                </p>
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="container-checkbox">
-        <div class="checkbox">
-          <input type="checkbox" name="extra" id="extra"></input>
-          <label for="extra" class="font-xxs-b cor-p1">Larger storage
-              <p class="font-3-xs cor-n1">Extra 1TB of cloud save <span class="check-price cor-p2">+$2/mo</span></p>
-            </label>
+          <div class="container-checkbox">
+            <div class="checkbox">
+              <input type="checkbox" name="extra" id="extra" />
+              <label for="extra" class="font-xxs-b cor-p1"
+                >Larger storage
+                <p class="font-3-xs cor-n1">
+                  Extra 1TB of cloud save
+                  <span class="utilitarian check-price cor-p2" data-price="2"
+                    >+$2/mo</span
+                  >
+                </p>
+              </label>
+            </div>
           </div>
+          <div class="container-checkbox">
+            <div class="checkbox">
+              <input type="checkbox" name="theme" id="theme" />
+              <label for="theme" class="font-xxs-b cor-p1"
+                >Customizable profile
+                <p class="font-3-xs cor-n1">
+                  Custom theme on your profile
+                  <span class="utilitarian check-price cor-p2" data-price="2"
+                    >+$2/mo</span
+                  >
+                </p>
+              </label>
+            </div>
+          </div>
+        </form>
+        <div id="container-utilitarian-class" class="container-buttons">
+          <button
+            id="button-utilitarian-class"
+            class="btn-prev-step cor-n1 font-1-s"
+          >
+            Go Back
+          </button>
+          <button
+            id="button-utilitarian-class"
+            class="btn-next-step cor-n3 font-2-xs-b"
+          >
+            Next Step
+          </button>
         </div>
-        <div class="container-checkbox">
-        <div class="checkbox">
-          <input type="checkbox" name="theme" id="theme"></input>
-          <label for="theme" class="font-xxs-b cor-p1">Customizable profile
-              <p class="font-3-xs cor-n1">Custom theme on your profile <span class="check-price
-                 cor-p2">+$2/mo</span></p>
-            </label>
-        </div>
-        </div>
-      </form>
-      <div id="container-utilitarian-class" class="container-buttons">
-        <button id="button-utilitarian-class" class="btn-prev-step cor-n1 font-1-s">Go Back</button>
-        <button id="button-utilitarian-class" class="btn-next-step cor-n3 font-2-xs-b">Next Step</button>
-      </div>
-    </section>
+      </section>
       <!-- Step 3 end -->
       <!-- Step 4 start -->
       <section class="step-infos step step-four" data-step="four">
-      <div class="header-description">
-        <h1 class="font-1-xl cor-p1">Finishing up</h1>
+        <div class="header-description">
+          <h1 class="font-1-xl cor-p1">Finishing up</h1>
           <p class="font-2-xs-b cor-n1">
-            Double-check everything looks OK before confirming. 
+            Double-check everything looks OK before confirming.
           </p>
-      </div>
-      <!-- Dynamically add subscription and add-on selections here -->
-      <div class="dynamic-data">
-        <div class="plan-data">
-          <p class="cor-p1 font-xxs-b">Arcade (Monthly)</p>
-          <a href="" class="font-xs" data-change>Change</a>
         </div>
-        <div class="dec"></div>
-        <span class="price-data cor-p1 font-4-xs-b">$9/mo</span>
-        <div class="online-service-data">
-          <p class="cor-n1 font-2-xs-b">Online service</p>
+        <!-- Dynamically add subscription and add-on selections here -->
+        <div class="dynamic-data">
+          <div class="plan-data">
+            <p class="cor-p1 font-xxs-b">
+              <span data-type-plan></span>
+              <span data-time-indicator>(Monthly)</span>
+            </p>
+            <a href="" class="font-xs" data-change>Change</a>
+            <span
+              class="price-data cor-p1 font-4-xs-b"
+            ></span>
+          </div>
+          <div class="dec"></div>
+          <div class="add-on"></div>
         </div>
-        <span class="price-data cor-p1 font-2-xs-b">$1/mo</span>
-        <div class="larger-storage-data">
-          <p class="cor-n1 font-2-xs-b">Larger storage</p>
+        <div class="total-per-month">
+          <p class="cor-n1 font-xs">
+            Total <span data-year-or-month>(per month)</span>
+          </p>
+          <span class="price-per-month cor-p2 font-2-s-b">+$<span data-sum-value></span>/mo</span>
         </div>
-        <span class="price-data cor-p1 font-2-xs-b">$2/mo</span>
-      </div>
-      <div class="total-per-month">
-        <p class="cor-n1 font-xs">Total <span data-per-or-month>(per month/year)</span></p> 
-        <span class="price-per-month cor-p2 font-2-s-b">+$12/mo</span>
-      </div>
-       <div class="container-buttons-end">
-        <button class="btn-prev-step cor-n1 font-1-s">Go Back</button>
-        <button class="btn-confirm-step cor-n3 font-2-xs-b">Confirm</button>
-      </div>
-    </section>
+        <div class="container-buttons-end">
+          <button class="btn-prev-step cor-n1 font-1-s">Go Back</button>
+          <button class="btn-confirm-step cor-n3 font-2-xs-b">Confirm</button>
+        </div>
+      </section>
       <!-- Step 4 end -->
       <!-- Step 5 start -->
       <section class="last-step step step-five" data-step="five">
-        <div><img src="./assets/images/icon-thank-you.svg" alt=""></div>
-        <h1 class="font-1-xl cor-p1">Thank you! </h1>
+        <div><img src="./assets/images/icon-thank-you.svg" alt="" /></div>
+        <h1 class="font-1-xl cor-p1">Thank you!</h1>
         <p class="font-1-s cor-n1">
-          Thanks for confirming your subscription! We hope you have fun
-          using our platform. If you ever need support, please feel free to email us
+          Thanks for confirming your subscription! We hope you have fun using
+          our platform. If you ever need support, please feel free to email us
           at support@loremgaming.com.
         </p>
       </section>
