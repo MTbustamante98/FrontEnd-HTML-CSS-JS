@@ -1,0 +1,94 @@
+.second-box {
+  width: 100%;
+  height: auto;
+  margin-top: 2.75rem;
+  background-image: linear-gradient(
+    to left,
+    var(--purple900),
+    var(--purple950)
+  );
+  border-bottom-left-radius: 4.5rem;
+  border-top-right-radius: 4.5rem;
+  position: relative;
+}
+
+.introducing-two-and-img-two {
+  background: url("/images/bg-pattern-circles.svg") no-repeat;
+  background-size: 60% 250%;
+  background-position: -28% 80%;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+.box-image-phone {
+  position: absolute;
+  top: -3.5rem;
+  left: 5.5rem;
+}
+
+.box-image-phone .image-phone {
+  width: 450px;
+  height: 500px;
+}
+
+.box-information {
+  margin: 6rem 0 0 23rem;
+}
+
+.box-information h1 {
+  font: 600 2rem "Overpass", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.box-information p {
+  max-width: 49ch;
+  font: 300 1rem "Overpass", sans-serif;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .box-image-phone {
+    top: -12rem;
+    left: 0;
+  }
+
+  .box-information {
+    margin-left: 25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .box-image-phone {
+    top: -12rem;
+    left: 0;
+  }
+
+  .box-image-phone .image-phone {
+    width: auto;
+    height: auto;
+  }
+
+  .introducing-two-and-img-two {
+    height: 600px;
+    flex-direction: column;
+    background-size: 150% 84%;
+    background-position: 50% -150%;
+  }
+
+  .box-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8rem 0 0 0;
+  }
+
+  .box-information h1,
+  p {
+    text-align: center;
+  }
+
+  .box-information p {
+    max-width: 30ch;
+  }
+}

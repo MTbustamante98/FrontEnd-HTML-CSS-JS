@@ -1,12 +1,15 @@
 [data-step="one"] {
+  display: flex;
+}
+
+[data-step="two"] {
   display: none;
 }
-[data-step="two"] {
-  display: block;
-}
+
 [data-step="three"] {
-  display: block;
+  display: none;
 }
+
 [data-step="four"] {
-  display: block;
+  display: none;
 }

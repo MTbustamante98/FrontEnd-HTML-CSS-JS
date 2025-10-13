@@ -8,15 +8,13 @@ if (steps.length) numberOfSteps[0].classList.add(active);
 
 function updateBackgroundAndColor() {
   const atual = steps[currentStep];
-
   numberOfSteps.forEach((el) => el.classList.remove(active));
 
   const id = atual.getAttribute("data-step");
   const stepNumber = document.querySelector(`[data-step=${id}]`);
 
-  if (stepNumber) {
-    stepNumber.classList.add(active);
-  }
+  if (stepNumber) stepNumber.classList.add(active);
+  if (id === "five") numberOfSteps[3].classList.add(active); 
 }
 
 function updateStep() {

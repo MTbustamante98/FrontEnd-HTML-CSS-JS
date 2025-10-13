@@ -1,0 +1,13 @@
+@import "./geral/geral.css";
+
+@import "./utilidades/cores.css";
+
+@import "./header/header.css";
+
+@import "./main/first-container/first-container.css";
+@import "./main/second-container/second-container.css";
+@import "./main/third-container/third-container.css";
+
+@import "./dropdown/dropdown.css";
+
+@import "./footer/footer.css";

@@ -1,0 +1,240 @@
+.bg-header {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(120deg, var(--orange300), var(--red550)),
+    url("/images/bg-pattern-intro-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 15% 50%;
+  background-blend-mode: overlay;
+  border-bottom-left-radius: 4.5rem;
+}
+
+.nav .ul-list {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.ul-list .li-active-dropdown {
+  position: relative;
+}
+
+.ul-list .li-active-dropdown [data-list] {
+  display: inline-flex;
+  align-items: center;
+  font: 500 0.895rem "Ubuntu", sans-serif;
+  color: var(--white) !important;
+}
+
+.ul-list .li-active-dropdown [data-list]::after {
+  content: "";
+  background: url("/images/icon-arrow-light.svg") no-repeat;
+  width: 0.625rem;
+  height: 0.438rem;
+  margin-left: 0.313rem;
+}
+
+.ul-list .li-active-dropdown [data-list].active::after {
+  transform: rotate(180deg);
+}
+
+.header .logo-menu-buttons {
+  display: flex;
+  align-items: center;
+  padding-top: 3.75rem;
+  gap: 3.75rem;
+}
+
+.logo-menu-buttons .buttons-login {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttons-login .btn-login a {
+  color: var(--white);
+}
+
+.buttons-login .btn-sign-up a {
+  padding: 0.875rem 2.5rem;
+}
+
+.utilitarian-button a {
+  color: var(--red550);
+  background: var(--white);
+  border-radius: 1.5rem;
+  font-weight: 600;
+}
+
+.utilitarian-button a:hover {
+  background: hsl(0, 100%, 72%);
+  color: var(--white);
+}
+
+.platform-operation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 3rem;
+}
+
+.platform-operation h1 {
+  font: 500 3.75rem "Overpass", sans-serif;
+}
+
+.platform-operation p {
+  color: hsl(0, 100%, 90%);
+  font: 300 1rem "Ubuntu", sans-serif;
+  margin-top: 1rem;
+}
+
+.buttons-start-learn {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.75rem;
+}
+
+.buttons-start-learn .btn-start-free a {
+  padding: 0.875rem 1rem !important;
+}
+
+.buttons-start-learn .btn-learn-more a {
+  border: 1px solid var(--white);
+  border-radius: 1.5rem;
+  margin-left: 0.938rem;
+}
+
+.buttons-start-learn .btn-learn-more a:hover {
+  background: var(--white);
+  color: hsl(0, 100%, 72%);
+}
+
+.img-burguer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bg-header {
+    height: 550px;
+    background-image: linear-gradient(120deg, var(--orange300), var(--red550)),
+      url("/images/bg-pattern-intro-mobile.svg");
+    background-size: 280%;
+    background-position: 35% 31%;
+  }
+
+  .logo-menu-buttons {
+    justify-content: space-between;
+  }
+
+  .img-burguer {
+    cursor: pointer;
+  }
+
+  .nav {
+    height: 470px;
+    width: 340px;
+    position: absolute;
+    top: 7rem;
+    left: 5.2rem;
+    background: var(--white);
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
+    z-index: 1;
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav .ul-list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    position: relative;
+  }
+
+  .ul-list::after {
+    content: "";
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    bottom: -0.875rem;
+    display: block;
+    background: var(--grey-paragraph-lightness);
+  }
+
+  .ul-list .li-active-dropdown {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ul-list .li-active-dropdown [data-list] {
+    color: var(--grey950) !important;
+  }
+
+  .li-active-dropdown ul.active {
+    display: block !important;
+  }
+
+  .nav .ul-list .li-active-dropdown [data-list]::after {
+    background: url("/images/icon-arrow-dark.svg") no-repeat;
+  }
+
+  .buttons-login {
+    flex-direction: column;
+    gap: 1.875rem;
+    position: absolute;
+    top: 480px;
+    left: 55px;
+    z-index: 999;
+    display: none !important;
+  }
+
+  .buttons-login.active {
+    display: flex !important;
+  }
+
+  .buttons-login .btn-login a {
+    color: var(--white);
+  }
+
+  .buttons-login .btn-login a {
+    color: var(--grey950);
+  }
+
+  .buttons-login .btn-sign-up a {
+    color: var(--white);
+    background-image: linear-gradient(120deg, var(--orange300), var(--red550));
+    border-radius: 1.5rem;
+    font-weight: 600;
+  }
+
+  .img-burguer {
+    display: block;
+  }
+
+  .platform-operation {
+    margin-top: 6rem;
+  }
+
+  .platform-operation h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    max-width: 14ch;
+  }
+
+  .platform-operation p {
+    max-width: 30ch;
+    text-align: center;
+    font-size: 1.125rem;
+  }
+
+  .buttons-start-learn {
+    margin-top: 4rem;
+  }
+}

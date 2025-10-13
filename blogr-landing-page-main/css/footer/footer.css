@@ -1,0 +1,84 @@
+.bg-footer {
+  width: 100%;
+  height: auto;
+  background: var(--grey900);
+  border-top-right-radius: 4.5rem;
+}
+
+footer {
+  display: flex;
+  gap: 10rem;
+  padding-top: 3rem;
+}
+
+.logo {
+  padding-left: 15rem;
+}
+
+.list-footer {
+  display: flex;
+  gap: 15rem;
+}
+
+.list-footer .p-list {
+  font: 500 0.875rem "Overpass", sans-serif;
+  margin-bottom: 1.875rem;
+}
+
+.list-footer ul {
+  padding-bottom: 0.938rem;
+}
+
+.list-footer ul li {
+  margin-bottom: 0.875rem;
+}
+
+.list-footer ul li a {
+  color: var(--grey-paragraph-medium);
+  font: 600 0.875rem "Overpass", sans-serif;
+}
+
+.list-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+@media (max-width: 1024px) {
+  .logo { 
+    padding-left: 3rem;
+
+  }
+
+  .list-footer {
+    gap: 7.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    padding-bottom: 1.875rem;
+  }
+
+  .logo {
+    padding-left: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .list-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}

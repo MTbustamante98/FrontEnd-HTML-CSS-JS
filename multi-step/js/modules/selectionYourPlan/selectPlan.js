@@ -13,7 +13,7 @@ import {
   pricePlan,
   sumValue,
 } from "../stepFinishingUp/elementsFinishingStep.js";
-import addPrices from "../stepFinishingUp/addUpThePrices.js"
+import addPrices from "../stepFinishingUp/addUpThePrices.js";
 import { active } from "../utilitariansElements.js";
 let isYearly = false;
 
@@ -32,13 +32,16 @@ function extractPricePlan(element) {
 }
 
 function selectCardPlan({ currentTarget }) {
+  document
+    .querySelectorAll(".plan-info")
+    .forEach((el) => el.classList.remove("selected"));
+
+  currentTarget.classList.add("selected");
+
   extractPlanType(currentTarget);
   extractPricePlan(currentTarget);
+  
   addPrices();
-  // const priceElement = currentTarget.querySelector("[data-price]");
-  // const basePrice = Number(priceElement.dataset.price);
-  // const formatPrice = isYearly ? basePrice * 10 : basePrice;
-  // if (priceElement) sumValue.innerText = formatPrice;
 }
 
 function formatPrice() {

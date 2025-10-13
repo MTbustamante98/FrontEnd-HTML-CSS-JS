@@ -1,0 +1,56 @@
+:root {
+  /* Cores Principais */
+  --red500: hsl(213, 96%, 18%);
+  --red400: hsl(243, 100%, 62%);
+  --blue900: hsl(228, 100%, 84%);
+
+  /* Cores Neutras */
+  --grey600: hsl(207, 13%, 34%);
+  --grey900: hsl(240, 10%, 16%);
+  --grey950: hsl(240, 10%, 5%);
+  --white: hsl(0, 100%, 100%);
+  --grey-paragraph-dark: hsl(207, 13%, 40%);
+  --grey-paragraph-medium: hsl(207, 13%, 70%);
+  --grey-paragraph-lightness: hsl(207, 13%, 80%);
+  --grey-full-lightness: hsl(207, 13%, 95%);
+
+  /* Gradients */
+  --orange300: hsl(13, 100%, 72%);
+  --red550: hsl(353, 100%, 62%);
+  --purple950: hsl(237, 17%, 21%);
+  --purple900: hsl(237, 23%, 31%);
+}
+
+/* Principal */
+.cor-p1 {
+  color: var(--red500);
+}
+
+.cor-p2 {
+  color: var(--red400);
+}
+
+.cor-p3 {
+  color: var(--blue900);
+}
+
+/* Neutra */
+.cor-n1 {
+  color: var(--grey600);
+}
+
+.cor-n2 {
+  color: var(--grey900);
+}
+
+.cor-n3 {
+  color: var(--white);
+}
+
+.cor-n4 {
+  color: var(--grey-paragraph-dark);
+}
+
+.cor-n5 {
+  color: var(--grey-paragraph-lightness);
+}
