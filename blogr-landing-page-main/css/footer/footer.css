@@ -12,7 +12,7 @@ footer {
 }
 
 .logo {
-  padding-left: 15rem;
+  padding-left: 10rem;
 }
 
 .list-footer {
@@ -41,14 +41,6 @@ footer {
 .list-footer ul li a:hover {
   text-decoration: underline;
 }
-
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-} */
 
 @media (max-width: 1024px) {
   .logo { 
