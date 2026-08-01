@@ -66,24 +66,17 @@ export function modifyCalc({ target }: Event & { target: HTMLButtonElement }) {
 }
 
 export function renderNumber({
-  currentTarget,
-}: Event & { currentTarget: HTMLButtonElement }) {
+  target,
+}: Event & { target: HTMLButtonElement }) {
   if (!dom.DisplayOperation || !dom.DisplayDigit) return;
 
-  if (
-    currentTarget.innerText === "," &&
-    dom.DisplayDigit.innerText.includes(",")
-  ) {
+  if (target.innerText === "," && dom.DisplayDigit.innerText.includes(",")) {
     if (
-      checkPonctuation(
-        currentTarget.innerText ?? null,
-        ",",
-        String(state.firstValue),
-      )
+      checkPonctuation(target.innerText ?? null, ",", String(state.firstValue))
     )
       return;
   } else {
-    addDigitCalculate(dom.DisplayDigit, currentTarget.innerText);
+    addDigitCalculate(dom.DisplayDigit, target.innerText);
   }
 
   if (state.operator) {
