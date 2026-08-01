@@ -5,8 +5,12 @@ import addDigitCalculate from "../utils/addDigitCalculate";
 import checkPonctuation from "../utils/checkPonctuation";
 import { calculate } from "../operations/calculateOperators";
 
-export function modifyCalc({ target }: Event & { target: HTMLButtonElement }) {
-  state.op = target.innerText;
+export function modifyCalc(e: Event) {
+  const target = e.target as HTMLButtonElement | null;
+
+  if (!target) return;
+
+  state.op = target?.innerText;
 
   if (!dom.DisplayDigit || !dom.DisplayOperation) return;
 
@@ -65,18 +69,25 @@ export function modifyCalc({ target }: Event & { target: HTMLButtonElement }) {
   }
 }
 
-export function renderNumber({
-  target,
-}: Event & { target: HTMLButtonElement }) {
-  if (!dom.DisplayOperation || !dom.DisplayDigit) return;
+export function renderNumber(e: Event) {
+  const currentTarget = e.currentTarget as HTMLButtonElement | null;
 
-  if (target.innerText === "," && dom.DisplayDigit.innerText.includes(",")) {
+  if (!currentTarget || !dom.DisplayOperation || !dom.DisplayDigit) return;
+
+  if (
+    currentTarget.innerText === "," &&
+    dom.DisplayDigit.innerText.includes(",")
+  ) {
     if (
-      checkPonctuation(target.innerText ?? null, ",", String(state.firstValue))
+      checkPonctuation(
+        currentTarget.innerText ?? null,
+        ",",
+        String(state.firstValue),
+      )
     )
       return;
   } else {
-    addDigitCalculate(dom.DisplayDigit, target.innerText);
+    addDigitCalculate(dom.DisplayDigit, currentTarget.innerText);
   }
 
   if (state.operator) {
