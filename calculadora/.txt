@@ -1,0 +1,23 @@
+const button = e?.currentTarget as HTMLButtonElement | null;
+  const newValue = button?.dataset.value ?? null;
+  const newOperator = button?.dataset.operator ?? null;
+
+  if (newOperator) {
+    if (state.firstValue) {
+      addDigitCalculate(
+        dom.DisplayOperation,
+        `${state.firstValue} ${newOperator}`,
+      );
+      clearText(dom.DisplayDigit);
+      state.operator = newOperator;
+    }
+    return;
+  }
+
+  if (newValue) {
+    if (checkPonctuation(button?.dataset.value ?? null, ",", state.firstValue))
+      return;
+
+    state.firstValue = (state.firstValue ?? "") + newValue;
+    addDigitCalculate(dom.DisplayDigit, newValue);
+  }

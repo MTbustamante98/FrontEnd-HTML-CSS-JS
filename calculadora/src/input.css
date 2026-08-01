@@ -1,0 +1,253 @@
+@import "tailwindcss";
+
+@theme {
+  /* theme 1 */
+  /* backgrounds */
+  --color-navy850: hsl(222, 26%, 31%);
+  --color-navy900: hsl(223, 31%, 20%);
+  --color-navy950: hsl(224, 36%, 15%);
+
+  /* keys */
+  /* key background */
+  --color-navy600: hsl(225, 50%, 75%);
+  --color-navy700: hsl(225, 21%, 49%);
+  /* key shadow */
+  --color-navy800: hsl(224, 28%, 35%);
+
+  /* key background, toggle */
+  --color-red500: hsl(6, 63%, 60%);
+  --color-red600: hsl(6, 63%, 50%);
+  /* key shadow */
+  --color-red800: hsl(6, 70%, 34%);
+
+  /* key background */
+  --color-gray200: hsl(0, 0%, 90%);
+  /* key shadow */
+  --color-grayOrange400: hsl(28, 16%, 65%);
+
+  /* text */
+  --color-navy750: hsl(221, 14%, 31%);
+  --color-white: hsl(0, 100%, 100%);
+
+  /* theme 2 */
+
+  /* BRACKGROUNDS */
+
+  /* main background */
+  /* --color-gray200: hsl(0, 0%, 90%); */
+  /* toggle background, keypad background */
+  --color-gray300: hsl(0, 5%, 81%);
+  /* screen background */
+  --color-gray100: hsl(0, 0%, 93%);
+
+  /* keys */
+  /* key background */
+  --color-blue600: hsl(185, 42%, 47%);
+  --color-blue700: hsl(185, 42%, 37%);
+  /* key shadow */
+  --color-blue800: hsl(185, 58%, 25%);
+
+  /* key background, toggle */
+  --color-orange600: hsl(25, 98%, 60%);
+  --color-orange700: hsl(25, 98%, 40%);
+  /* key shadow */
+  --color-orange800: hsl(25, 99%, 27%);
+
+  /* key shadow */
+  --color-grayOrange450: hsl(35, 11%, 61%);
+
+  /* text */
+  --color-gray900: hsl(60, 10%, 19%);
+  /* --color-white: hsl(0, 100%, 100%); */
+
+  /* theme 3 */
+  /* backgrounds */
+  --color-purple950: hsl(268, 75%, 9%);
+  /* toggle background, keypad background, screen background */
+  --color-purple900: hsl(268, 71%, 12%);
+
+  /* keys */
+  /* key background */
+  --color-purple800: hsl(281, 89%, 26%);
+  /* key shadow */
+  --color-purple400: hsl(285, 91%, 52%);
+
+  /* key background, toggle */
+  --color-cyan500: hsl(176, 100%, 44%);
+  /* key shadow */
+  --color-cyan400: hsl(177, 92%, 70%);
+
+  /* key background */
+  --color-purple850: hsl(268, 47%, 21%);
+  --color-purple700: hsl(265, 50%, 45%);
+  /* key shadow */
+  --color-purple750: hsl(290, 70%, 36%);
+
+  /* text */
+  --color-yellow300: hsl(52, 100%, 62%);
+  --color-bule950: hsl(198, 20%, 13%);
+  /* --color-white: hsl(0, 100%, 100%); */
+}
+
+[data-choose].t2 {
+  transform: translateX(140%);
+}
+[data-choose].t3 {
+  transform: translateX(300%);
+}
+
+body {
+  background: var(--color-navy850);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: hidden;
+  font-family: "League Spartan", sans-serif;
+}
+
+.buttonKeysCalculator {
+  background: var(--color-gray200);
+  color: var(--color-navy750);
+  box-shadow: 0 4px 0 0 var(--color-grayOrange400);
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+
+.btnDel {
+  background: var(--color-navy700);
+  color: var(--color-white);
+  box-shadow: 0 4px 0 0 var(--color-navy800);
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.boxShadowResetButton {
+  box-shadow: 0 4px 0 0 var(--color-navy800);
+}
+
+.boxShadowLastButton {
+  box-shadow: 0 4px 0 0 var(--color-red800);
+}
+
+button > span {
+  transform: translateY(5px);
+}
+
+.buttonKeysHover,
+.buttonDelResetHover,
+.buttonSinalIgualHover {
+  position: relative;
+}
+
+.buttonKeysHover:hover {
+  background: var(--color-white);
+}
+
+.buttonDelResetHover:hover {
+  background: var(--color-navy600);
+}
+
+.buttonSinalIgualHover:hover {
+  background: var(--color-red500);
+}
+
+body.theme-2 {
+  background: var(--color-gray100);
+}
+
+body.theme-2 header p,
+body.theme-2 header span,
+body.theme-2 .buttonKeysCalculator {
+  color: var(--color-gray900);
+}
+
+body.theme-2 [data-display] {
+  background: var(--color-white);
+  color: var(--color-gray900);
+}
+
+body.theme-2 [data-operation-display],
+body.theme-2 [data-digit-display] {
+  color: var(--color-gray900) !important;
+}
+
+body.theme-2 .main {
+  background: var(--color-gray300);
+}
+
+body.theme-2 .btnDel,
+body.theme-2 .btnReset {
+  background: var(--color-blue700);
+}
+
+body.theme-2 .buttonDelResetHover:hover {
+  background: var(--color-blue600);
+}
+
+body.theme-2 .buttonSinalIgualHover:hover {
+  background: var(--color-orange600);
+}
+
+body.theme-2 .btnSinalIgual {
+  background: var(--color-orange700);
+}
+
+body.theme-2 [data-choose] {
+  background: var(--color-orange600);
+}
+
+body.theme-3 {
+  background: var(--color-purple950);
+}
+
+body.theme-3 header p,
+body.theme-3 header span,
+body.theme-3 .buttonKeysCalculator {
+  color: var(--color-yellow300);
+}
+
+body.theme-3 [data-display] {
+  background: var(--color-purple900);
+}
+
+body.theme-3 .main {
+  background: var(--color-purple900);
+}
+
+body.theme-3 .buttonKeysCalculator {
+  background: var(--color-purple850);
+  box-shadow: 0 4px 0 0 var(--color-purple400);
+}
+
+body.theme-3 .btnDel,
+body.theme-3 .btnReset {
+  background: var(--color-purple800);
+  box-shadow: 0 4px 0 0 var(--color-purple400);
+  color: var(--color-white);
+}
+
+body.theme-3 .btnSinalIgual {
+  background: var(--color-cyan500);
+  color: var(--color-gray900);
+  box-shadow: 0 4px 0 0 var(--color-cyan400);
+}
+
+body.theme-3 .buttonDelResetHover:hover {
+  background: var(--color-purple750);
+}
+
+body.theme-3 .buttonSinalIgualHover:hover {
+  background: var(--color-cyan400);
+}
+
+body.theme-3 .buttonKeysHover:hover {
+  background: var(--color-purple700);
+}
+
+body.theme-3 [data-choose] {
+  background: var(--color-cyan400);
+}
